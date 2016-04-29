@@ -1,0 +1,33 @@
+<ion-view title="Track Bus By Route Number" id="page3">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <label class="item item-input" name="bno">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Enter Bus Number">
+            </label>
+            <div class="spacer" style="width: 283px; height: 24px;"></div>
+            <label class="item item-select" name="route">
+                <span class="input-label">Select Route</span>
+                <select>
+                    <option>A to B</option>
+                    <option>B to A</option>
+                </select>
+            </label>
+        </form>
+        <div class="list card">
+            <div class="item item-divider">Bus No : 1234</div>
+            <div class="item item-body">
+                <div id="trackBusByRouteNumber-markdown1" style="color:#000000;">
+                    <p>Last Updated Details :</p>
+
+                    <p>Departed From Stop A</p>
+
+                    <p>Departed At 12:00 pm</p>
+
+                    <p>Next Stop : Stop B</p>
+                </div>
+            </div>
+        </div>
+        <a ui-sref="enroute.busTracker" id="trackBusByRouteNumber-button1" style="border-radius:0px 0px 0px 0px;" class="button button-assertive  button-block icon ion-android-map"> Track It On The Map</a>
+    </ion-content>
+</ion-view>
